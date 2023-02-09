@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row registration justify-content-center">
+				<div class="col-sm-6 bg-secondary my-3 rounded-3">
+					<p
+						class="h2 text-center mb-2 mt-3 mx-5 text-white bg-danger rounded-3 p-2">
+						Travel Reservation Form
+					</p>
+					<p
+						class="h5 text-center mx-5 mb-4 text-white rounded-3 p-2">
+						*&nbsp;Denotes Mandatory
+					</p>
+					<form action="welcome.html" onsubmit="return validate()">
+						<div class="container">
+							<div class="row gap-3 justify-content-center">
+								<div
+									class="col-sm-4 border border-2 text-white">
+									<label for="" class="text-white"
+										>Full Name <sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<input
+										type="text"
+										id="fullname"
+										class="t p-0" />
+								</div>
+
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-white"
+										>Email<sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<input type="text" id="e" class="t p-0" />
+								</div>
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-light"
+										>Tour Packages<sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<select
+										name="packages"
+										id="sel"
+										class="t"
+										required>
+										<option value="selection" selected>
+											please select
+										</option>
+										<option value="goa">Goa</option>
+										<option value="himachal">
+											Himacahl
+										</option>
+										<option value="rajastahn">
+											Rajasthan
+										</option>
+									</select>
+								</div>
+								<div
+									class="col-sm-4 border border-2 text-light">
+									<label for="" class="text-white"
+										>Arrival Date<sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<input
+										type="date"
+										id="d"
+										name="birthday"
+										class="t" />
+								</div>
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-white"
+										>Number of persons&nbsp;<sup
+											>*</sup
+										></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<input type="text" id="persons" class="t" />
+								</div>
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-white"
+										>What would you want to avail<sup
+											>*</sup
+										></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2">
+									<input
+										type="checkbox"
+										id="b"
+										name="boarding"
+										value="b" />&ensp;<label
+										class="text-white"
+										>Boarding</label
+									><br />
+									<input
+										type="checkbox"
+										id="f"
+										name="fooding"
+										value="f" />&ensp;<label
+										class="text-white"
+										>Fooding</label
+									><br />
+									<input
+										type="checkbox"
+										id="s"
+										name="sightseeing"
+										value="f" />&ensp;<label
+										class="text-white"
+										>Sight Seeing</label
+									><br />
+								</div>
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-white"
+										>Discount Coupon Code<sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2 p-0">
+									<input
+										type="text"
+										id="discount"
+										class="t" />
+								</div>
+								<div class="col-sm-4 border border-2">
+									<label for="" class="text-white"
+										>Terms and Conditions<sup>*</sup></label
+									>
+								</div>
+								<div class="col-sm-4 border border-2">
+									<input
+										type="radio"
+										id="a"
+										name="terms" /><label
+										for=""
+										class="text-white"
+										>&ensp;I agree</label
+									>
+									<input
+										type="radio"
+										id="d"
+										name="terms" /><label
+										for=""
+										class="text-white"
+										>&ensp;Disagree</label
+									>
+								</div>
+								<div class="col-sm-12 text-center mt-5">
+									<button
+										class="btn btn-danger"
+										type="submit ">
+										Complete Reservation
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
